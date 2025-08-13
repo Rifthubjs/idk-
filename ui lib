@@ -123,17 +123,17 @@ function Library:Init(options)
     TopNar.BorderColor3 = Color3.new(0,0,0)
     TopNar.ZIndex = 107
     TopCorner.CornerRadius = UDim.new(0,6)
-    Title.Name = "Prestige (solora)"
+    Title.Name = "Riigen"
     Title.Size = UDim2.new(0,167,0,39)
     Title.BackgroundColor3 = Color3.new(1,1,1)
     Title.BackgroundTransparency = 1
     Title.BorderSizePixel = 0
-    Title.BorderColor3 = Color3.new(0,0,0)
-    Title.Text = "<font color=\"#FF4980\">Wii</font><font color=\"#4F56FF\">Hub</font>"
-    Title.TextColor3 = Color3.new(0,0,0)
+    Title.BorderColor3 = Color3.new(218,237,234)
+    Title.Text = "Riigen"
+    Title.TextColor3 = Color3.new(218,236,234)
     Title.Font = Enum.Font.Unknown
-    Title.TextSize = 20
-    Title.Visible = false
+    Title.TextSize = 10
+    Title.Visible = true
     Title.ZIndex = 108
     MainCorner.CornerRadius = UDim.new(0,6)
     SideBar.Name = "SideBar"
@@ -153,7 +153,7 @@ function Library:Init(options)
     TabScrollbar.BorderColor3 = Color3.new(0,0,0)
     TabScrollbar.ZIndex = 110
     TabScrollbar.ScrollBarThickness = 0
-    TabScrollbar.ScrollBarImageColor3 = Color3.new(0,0,0)
+    TabScrollbar.ScrollBarImageColor3 = Color3.new(255,255,255)
     UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
     UIListLayout.Padding = UDim.new(0,5)
@@ -1153,4 +1153,5 @@ function Library:Init(options)
 
     return GUI
 end
-return Libary
+
+local lib = Library:Init{}
